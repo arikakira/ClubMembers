@@ -1,10 +1,16 @@
 public class MemberInfo {
+    private int gradYear;
+    private boolean goodStanding;
+    private String name;
     /**
      * Constructs a MemberInfo object for the club member with name name,
      * graduation year gradYear, and standing hasGoodStanding.
      */
-    public MemberInfo(String name, int gradYear, boolean hasGoodStanding) {
-        /* implementation not shown */ }
+    public MemberInfo(String n, int year, boolean gs) {
+        gradYear = year;
+        goodStanding = gs;
+        name = n;
+    }
 
 
     /** Returns the graduation year of the club member. */
