@@ -12,15 +12,23 @@ public class MemberInfo {
         name = n;
     }
 
+    public String toString() {
+        String s = "\nName: " + name + "\n";
+        s += "Year: " + gradYear + "\n";
+        return s + "Good Standing: " + goodStanding + "\n";
+    }
+
 
     /** Returns the graduation year of the club member. */
     public int getGradYear() {
-        /* implementation not shown */ }
+        return gradYear;
+    }
 
 
     /** Returns true if the member is in good standing and false otherwise. */
     public boolean inGoodStanding() {
-        /* implementation not shown */ }
+        return goodStanding;
+    }
     // There may be instance variables, constructors, and methods that are not
     // shown.
 }
